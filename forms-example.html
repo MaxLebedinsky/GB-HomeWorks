@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="form-letters-bg">
+            <div class="form-letters">
+                <div class="letters-contacts">
+                    <h2 class="letters-heading">Адрес</h2>
+                    <hr class="letters-hr">
+                    <p class="letters-address">г. Париж Челябинская обл. пр. Монмартр 21-1 Василий Пупкин</p>
+                </div>
+
+                <div class="letters-content">
+                    <h2 class="letters-heading">Отправка сообщения</h2>
+                    <hr class="letters-hr">
+                    <form action="#" class="letters-form">
+                        <label class="letters-label">
+                            Ваше имя <em>*</em><input class="letters-input" type="text" required>
+                        </label>
+
+                        <label class="letters-label">
+                            Ваше E-mail <em>*</em><input class="letters-input" type="email" required>
+                        </label>
+
+                        <label class="letters-label">
+                            Ваше сообщение <em>*</em><textarea class="letters-textarea" required></textarea>
+                        </label>
+
+                        <input type="submit" class="letters-submit" value="Отправить">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-gray-bg">
+            <form action="#" class="form-gray">
+                <div class="form-gray-content">
+                    <div class="form-gray-title">
+                        <h3 class="form-gray-title-auth">Авторизация</h3>
+                        <img src="images/close_button.png" class="form-gray-close" width="26" height="24"
+                            alt="Close window">
+                    </div>
+                    <input class="form-gray-input" type="text" placeholder="Логин" required>
+                    <input class="form-gray-input" type="password" placeholder="Пароль" required>
+                    <input type="submit" class="form-gray-submit" value="Войти">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
