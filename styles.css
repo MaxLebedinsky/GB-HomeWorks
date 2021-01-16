@@ -9,7 +9,8 @@ body {
 
 .product {
     padding: 25px calc(50% - 1172px / 2);
-    background: #445161;
+    background: url(images/drone2-bkgrnd.png) repeat-x 0 104% / 35px, url(images/drone2-bkgrnd.png) repeat-x 0 -4% / 30px #445161;
+    background-blend-mode: soft-light;
     display: flex;
     justify-content: space-between;
 }
@@ -32,21 +33,18 @@ body {
     color: white;
     list-style-type: none;
     margin-bottom: 19px;
+    margin-left: 25px;
+    list-style-image: url(images/Check.svg);
 }
 
 .product-item {
     margin-bottom: 10px;
 }
 
-.product-item::before {
-    content: "\2713 ";
-    color: white;
-    padding-right: 5px;
-}
-
 .about {
     padding: 45px calc(50% - 1172px / 2) 50px;
-    background: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0.2)) no-repeat center, url(images/palms-bkgrnd.jpg) no-repeat center -250px;
+    background-size: 1272px;
     display: flex;
     justify-content: space-between;
 }
@@ -68,8 +66,10 @@ body {
 }
 
 .dignity {
-    padding: 25px calc(50% - 1172px / 2) 22px;
-    background: #F5F5F5;
+    max-width: 1272px;
+    margin: 0 auto;
+    padding-top: 25px;
+    background: url(images/drone2-bkgrnd.png) repeat-y 98%  / 70px, url(images/drone12-bkgrnd.jpg) no-repeat -100px -37px/ 50%, #F5F5F5;
 }
 
 .dignity-h2 {
@@ -85,16 +85,32 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style-type: none;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .dignity-list-item {
-    width: 45%;
-    background: url(images/plus-icon.svg) no-repeat 0 8px;
-    padding-left: 40px;
+    width: 49%;
+    display: flex;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
     margin-bottom: 26px;
+}
+
+.dignity-list-item::before {
+    content: '+';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 26px;
+    height: 35px;
+    color: white;
+    line-height: 1.1;
+    padding: 0 7px;
+    background-color: #445161;
+    font-weight: 300;
+    margin-right: 8px;
+    margin-top: 8px;
 }
 
 .screenshots {
@@ -115,7 +131,7 @@ body {
 }
 
 .screenshots-item {
-    width: 48%;
+    width: 49%;
     margin-bottom: 25px;
     display: flex;
     align-items: flex-start;
@@ -165,6 +181,7 @@ body {
 
 .reviews-icon {
     margin-right: 15px;
+    border-radius: 50%;
 }
 
 .reviews-content {
@@ -218,7 +235,8 @@ body {
 
 .offers-item {
     width: 30.3%;
-    background: #445162;
+    background: url(images/drone2-bkgrnd.png) no-repeat -50px 4px/ 326px,#445162;
+    background-blend-mode: multiply;
     border-radius: 5px;
     box-sizing: border-box;
     border: 2px solid #445162;
@@ -265,7 +283,8 @@ body {
 
 .contacts {
     padding: 25px calc(50% - 755px / 2) 48px;
-    background: #445162;
+    background: url(images/drone2-bkgrnd.png) repeat-x 0 103% / 40px, url(images/drone2-bkgrnd.png) repeat-x 0 -4% / 39px #445161;
+    background-blend-mode: soft-light;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -283,7 +302,7 @@ body {
 }
 
 .contacts-form {
-    width: 62%;
+    width: 65%;
 }
 
 .form-input {
@@ -339,16 +358,64 @@ body {
     margin-bottom: 47px;
 }
 
-.contacts-list-item {
+.contacts-list-item-skype {
+    background-image: url(images/contacts-skype.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
     margin-bottom: 20px;
 }
 
-.contacts-list-item>img {
-    margin-right: 10px;
+.contacts-list-item-icq {
+    background-image: url(images/contacts-icq.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts-list-item-email {
+    background-image: url(images/contacts-mail.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts-list-item-phone {
+    background-image: url(images/contacts-phone.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
 }
 
 .social-button {
-    margin-right: 4px;
+    margin-right: 7px;
+    color: #445162;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding-top: 9px;
+    fill: #445162;
+}
+
+.social-button:hover {
+    background-color: #2d3641;
+    color: white;
+    fill: white;
+}
+
+.facebook-svg {
+    padding-top: 11px;
 }
 
 .footer {
